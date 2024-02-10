@@ -3,3 +3,4 @@
 #.env
 #.wwebjs_auth
 **/node_modules/**
+*.exe
