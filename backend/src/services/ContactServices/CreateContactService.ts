@@ -33,6 +33,7 @@ const CreateContactService = async ({
       name,
       number,
       email,
+      // @ts-ignore
       extraInfo
     },
     {

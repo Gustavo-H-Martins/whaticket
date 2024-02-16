@@ -2,9 +2,11 @@ docker run --name whaticket -e MYSQL_ROOT_PASSWORD=strongpassword -e MYSQL_DATAB
 
 
 -- A sintaxe geral para criar um usuário no MySQL
-CREATE USER 'whaticket'@'172.17.0.1' IDENTIFIED BY 'strongpassword';
+CREATE USER 'whaticket'@'172.17.0.1' IDENTIFIED BY 'Host@2024';
 -- Para conceder todos os privilégios em todas as tabelas do banco de dados
 GRANT ALL PRIVILEGES ON *.* TO 'whaticket'@'172.17.0.1';
 
 -- Comando é usado para recarregar as tabelas de privilégios do MySQL após realizar alterações nos privilégios dos usuários.
-FLUSH PRIVILEGES
+FLUSH PRIVILEGES;
+
+
